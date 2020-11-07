@@ -14,18 +14,8 @@
     </style>
   </head>
   <body>
-    <div class="list">
-
-    </div>
-    <button class="getFood">Get food</button>
   </body>
   <script>
-    $(document).ready(function() {
-      $('.getFood').click(function() {
-        $.get('/food', function(resp) {
-          $(".list").append("<div>" + resp + "</div>");
-        })
-      })
-    })
+    
   </script>
 </html>
