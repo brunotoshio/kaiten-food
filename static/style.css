@@ -1,0 +1,51 @@
+@keyframes colors {
+  from  {color: red;}
+  to    {color: yellow;}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(-45deg);}
+  100% {transform: rotate(45deg);}
+}
+
+.welcome {
+  animation-name: colors;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+}
+.marquee {
+  border-radius: 10px;
+  border: solid 3px yellow;
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+}
+.container {
+  width: 2000px;
+  padding: 20px;
+}
+.food {
+  float: left;
+  margin: 20px;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 20px;
+  border: solid 2px orange;
+  overflow: hidden;
+}
+.food img {
+  width: 100px;
+  height: 80px;
+}
+.food .name {
+  text-align: center;
+}
+.food .price {
+  color: red;
+  text-align: right;
+  padding-right: 10px;
+}
